@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="vticker">
     <div class="date">
         <img src="<?php echo base_url('assets/images/t1.jpg');?>" class="img-responsive" alt="" style="max-height:100px;margin-left:5%;"/>
@@ -17,3 +18,5 @@
     </div>
 </div>
     <div class="clearfix"></div>
+=======
+>>>>>>> origin/master
