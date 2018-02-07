@@ -22,7 +22,7 @@
                                 <li><h3>Children must be taught how to think, not what to think.</h3></li>
                                 <li><h3>Educating the mind without educating the heart is no education at all.</h3></li>	
                                 <li><h3>Spoon feeding in the long run teaches us nothing but the shape of the spoon.</h3></li>	
-                                <li><h3>The process of learning should be natural according to the age, ability and aptitude of the child.</h3></li>	
+                                <li><h3>The process of learning should be natural according to the age, ability and aptitude of the child.</h3></li>
                             </ul>	
                             <div class="clearfix"></div>
                         </div>
@@ -38,24 +38,7 @@
                     </div>
                     <div class="col-md-4 banner-grid">
                         <h3>News Feed</h3>
-                        <div class="banner-grid-sec">
-                            <div class="news-grid">
-                                <h4><a href="#">Vivamus tempus ligula</a></h4>
-                                <p>Aliquam sem velit, rhoncus sed arcu eu viverra.</p>
-                            </div>
-                            <div class="news-grid">
-                                <h4><a href="#">Vivamus tempus ligula</a></h4>
-                                <p>Aliquam sem velit, rhoncus sed arcu eu viverra.</p>
-                            </div>
-                            <div class="news-grid">
-                                <h4><a href="#">Vivamus tempus ligula</a></h4>
-                                <p>Aliquam sem velit, rhoncus sed arcu eu viverra.</p>
-                            </div>
-                            <div class="news-grid">
-                                <h4><a href="#">Vivamus tempus ligula</a></h4>
-                                <p>Aliquam sem velit, rhoncus sed arcu eu viverra.</p>
-                            </div>
-                        </div>
+                        <?php $this->load->view('templates/news'); ?>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -114,16 +97,7 @@
                         <div class="clearfix"></div>				 			 
                     </div>                    
                     <div class="col-md-4 event-grid">
-                        <div class="date">
-                            <h4><?php echo date("d");?></h4>
-                            <span><?php echo date("m/Y");?></span>
-                            <img src="<?php echo base_url('assets/images/t1.jpg');?>" class="img-responsive" alt="" style="max-height:100px;margin-left:5%;"/>
-                        </div>				 
-                        <div class="event-info">
-                            <h5><a href="#">Happy Birthday</a></h5>                            
-                            <p>Wishing you a Happy Birthday. May GOD bless you all the days you live.</p>				
-                        </div>
-                        <div class="clearfix"></div>				 			 
+                        <?php $this->load->view('templates/bday'); ?>				 			 
                     </div>
                     <div class="clearfix"></div>	
                 </div>

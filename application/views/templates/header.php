@@ -3,7 +3,7 @@
     <head>
         <title>School | Home :: Teamfreelancers</title>
         <link href="<?php echo base_url('assets/css/bootstrap.css');?>" rel='stylesheet' type='text/css' />
-        <!-- jQuery (necessary JavaScript plugins) -->
+        <script src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
         <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
         <!-- Custom Theme files -->
         <link href="<?php echo base_url('assets/css/style.css');?>" rel='stylesheet' type='text/css' />
@@ -13,6 +13,4 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="keywords" content="" />
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-        <script src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
-        <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>
-    </head>    
+    </head>
