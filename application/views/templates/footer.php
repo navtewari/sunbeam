@@ -39,9 +39,9 @@
             </div>
         </div>
         <!---->
+        <script src="<?php echo base_url('assets/js/jquery.flexisel.js');?>"></script>
         <script src="<?PHP echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
         <script src="<?PHP echo base_url('assets/js/jquery.easy-ticker.js'); ?>"></script>
-        <script src="<?php echo base_url('assets/js/jquery.twitterFader.min.js');?>"></script>
         <script>
             jQuery(function ($) {
                 var dd = $('.vticker').easyTicker({
@@ -76,12 +76,6 @@
                     dd.stop();
                     dd.options['visible'] = 0;
                     dd.start();
-                });
-
-                $('#webticker').webTicker();
-                $('#webticker').webTicker({
-                    travelocity: 0.05,
-                    direction: -1
                 });
 
             });
