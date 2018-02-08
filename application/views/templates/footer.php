@@ -79,6 +79,40 @@
                     dd.start();
                 });
 
+
+                var dd = $('.vticker1').easyTicker({
+                direction: 'up',
+                easing: 'easeInSine',
+                speed: 'slow',
+                interval: 4000,
+                height: 'auto',
+                visible: 2,
+                mousePause: 0,
+                controls: {
+                    up: '.up',
+                    down: '.down',
+                    toggle: '.toggle',
+                    playText: '<i class="fa fa-play" aria-hidden="true"></i>',
+                    stopText: '<i class="fa fa-pause" aria-hidden="true"></i>'
+                }
+                }).data('easyTicker');
+
+                cc = 1;
+                $('.aa').click(function () {
+                    $('.vticker1 ul').append('<li>' + cc + ' Triangles can be made easily using CSS also without any images. This trick requires only div tags and some</li>');
+                    cc++;
+                });
+
+                $('.vis').click(function () {
+                    dd.options['visible'] = 3;
+
+                });
+
+                $('.visall').click(function () {
+                    dd.stop();
+                    dd.options['visible'] = 0;
+                    dd.start();
+                });
             });
         </script>
     </body>

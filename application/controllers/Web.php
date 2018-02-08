@@ -9,6 +9,8 @@ class Web extends CI_Controller {
     }
     function index() {
         $data['news_'] = $this->mm->get_all_active_news();
+        $data['upcoming'] = $this->mm->get_most_recent_upcoming();
+        $data['announce'] = $this->mm->get_most_recent_announcements();
         $data['bday'] = $this->mm->students_bday_this_week(7);
         $data['menu'] = 1;
         $this->load->view('templates/header');

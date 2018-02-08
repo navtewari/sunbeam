@@ -44,6 +44,50 @@ class My_model extends CI_Model {
         return $query->result();
     }
 
+    function get_after_most_recent_news() {
+        $this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")<=',date('Y-m-d'));
+        $this->db->where('DATE_FORMAT(DATE_END, "%Y-%m-%d")>=',date('Y-m-d'));
+        $this->db->order_by('ID', 'desc');
+        //$this->db->where('(SUBSTRING_INDEX(DATE_, "/", -1))>=',(date('Y')));
+        $query = $this->db->get('newsevents');
+        if($query->num_rows() == 0){
+            $this->db->order_by('ID');
+            $this->db->where('(SUBSTRING_INDEX(DATE_, "/", -1))>=',(date('Y')));
+            $query = $this->db->get('newsevents');
+        }
+        // Exceptional Handling
+        //$this->_db_error();
+        // --------------------
+        return $query->result();
+    }
+
+    function get_most_recent_upcoming() {
+        $this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")<=',date('Y-m-d'));
+        $this->db->where('DATE_FORMAT(DATE_END, "%Y-%m-%d")>=',date('Y-m-d'));
+        //$this->db->where('(SUBSTRING_INDEX(DATE_, "/", -1))>=',(date('Y')));
+        $this->db->order_by('ID', 'des
+            c');
+        $this->db->where('STATUS',1);
+        $query = $this->db->get('upcoming');
+        // Exceptional Handling
+            $this->_db_error();
+        // --------------------
+        return $query->result();
+    }
+    
+    function get_most_recent_announcements() {
+        $this->db->where('DATE_FORMAT(DATE_START, "%Y-%m-%d")<=',date('Y-m-d'));
+        $this->db->where('DATE_FORMAT(DATE_END, "%Y-%m-%d")>=',date('Y-m-d'));
+        //$this->db->where('(SUBSTRING_INDEX(DATE_, "/", -1))>=',(date('Y')));
+        $this->db->order_by('ID', 'desc');
+        $this->db->where('STATUS',1);
+        $query = $this->db->get('announcements');
+        // Exceptional Handling
+            $this->_db_error();
+        // --------------------
+        return $query->result();
+    }
+
     function students_bday_this_week($diff_) {
         $datetime = new DateTime(date('Y/m/d'));
         $datetime->modify('+'.$diff_.' day');

@@ -74,10 +74,10 @@
                             <!-- Tab panes -->
                             <div class="tab-content tabs">
                                 <div role="tabpanel" class="tab-pane fade in active" id="Section1">
-                                    aasas
+                                    <?php $this->load->view('templates/tab/upcoming'); ?>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="Section2">
-                                    sdfsdf
+                                    <?php $this->load->view('templates/tab/announcements'); ?>
                                 </div>                                                     
                             </div>               
                         </div>
