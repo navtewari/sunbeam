@@ -40,7 +40,6 @@
             </div>
         </div>
         <!---->
-        <script src="<?php echo base_url('assets/js/jquery.flexisel.js');?>"></script>
         <script src="<?PHP echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
         <script src="<?PHP echo base_url('assets/js/jquery.easy-ticker.js'); ?>"></script>
         <script>
