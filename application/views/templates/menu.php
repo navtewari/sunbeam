@@ -1,11 +1,11 @@
 <div class="header">
     <div class="logo">
-        <a href="#"><img src="<?php echo base_url('assets/images/logo.png'); ?>" alt=""/></a>
+        <a href="<?php echo site_url('web');?>"><img src="<?php echo base_url('assets/images/logo.png'); ?>" alt=""/></a>
     </div>
     <div class="top-menu">
         <span class="menu"></span>
         <ul class="navig">
-            <li class="<?php if ($menu == 1) { echo "active";}?>"><a href="#">Home</a></li>
+            <li class="<?php if ($menu == 1) { echo "active";}?>"><a href="<?php echo site_url('web');?>">Home</a></li>
             <li class="<?php if ($menu == 2) { echo "active";}?>"><a href="<?php echo site_url('web/about'); ?>">About</a></li>
             <li class="<?php if ($menu == 3) { echo "active";}?>"><a href="#">Admissions</a></li>
             <li class="<?php if ($menu == 4) { echo "active";}?>"><a href="#">Features</a></li>

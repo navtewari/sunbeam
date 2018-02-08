@@ -4,18 +4,19 @@
                 <div class="ftr-sec">
                     <div class="col-md-6 ftr-grid">
                         <h3>Our School</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut odio ut quam convallis ultricies. Morbi rutrum lectus tortor. Cras vitae semper mi, et feugiat dolor.</p>
+                        <p>The Sunbean Sr. Sec. School is envisioned as a leading school, professionally managed, in order to cater to the needs of the 21st century education system.</p>
+                        <p>At our school, we promote a cumulative learning environment that helps in the development of the students’ cognitive skills along with their inter-personal skills as well as analytical skills.</p>
+                        <p><br><a href="<?php echo site_url('web/about'); ?>">Read more...</a></p>
                     </div>
                     <div class="col-md-3 ftr-grid2">
                         <h3>Pages</h3>
                         <ul>
-                            <li><a href="#"><span></span>Home</a></li>
-                            <li><a href="#"><span></span>About</a></li>
+                            <li><a href="<?php echo site_url('web');?>"><span></span>Home</a></li>
+                            <li><a href="<?php echo site_url('web/about'); ?>"><span></span>About</a></li>
                             <li><a href="#"><span></span>Admissions</a></li>
                             <li><a href="#"><span></span>Features</a></li>	
-                            <li><a href="#"><span></span>Gallery</a></li>
-                            <li><a href="#"><span></span>Contact</a></li>
+                            <li><a href="<?php echo site_url('web/gallery'); ?>"><span></span>Gallery</a></li>
+                            <li><a href="<?php echo site_url('web/contact'); ?>"><span></span>Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 ftr-grid3">

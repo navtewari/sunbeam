@@ -35,6 +35,14 @@ class Web extends CI_Controller {
         $this->load->view('contact',$data);
         $this->load->view('templates/footer');
     }
+    
+    function messages() {
+        $data['menu'] = 1;
+        $this->load->view('templates/header');
+        $this->load->view('messages',$data);
+        $this->load->view('templates/footer');
+    }
+    
     function uc_(){
         $this->load->view('error');
     }

@@ -97,10 +97,8 @@
                         <img src="<?php echo base_url('assets/images/t1.jpg'); ?>" class="img-responsive" alt=""/>
                     </div>                        
                     <div class="event-info">
-                        <h5><a href="#">Director's Message.</a></h5>
-                        <p>Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at, 
-                            volutpat et orci. Aliquam eu tellus orci.</p>	
-                        <p><br><a href="#">Read more...</a></p>
+                        <h5><a href="#">Manager's Message.</a></h5>
+                        <p>Education is the most important part of a person's life. It not only modifies the animal instincts but also instils moral and ethical merits. It is the responsibility of the educational institutions to provide an atmosphere of freedom to each and every one irrespective of any discrimination. <a href="<?php echo site_url('web/messages'); ?>">Read more...</a></p>
                     </div>
                     <div class="clearfix"></div>				 			 
                 </div>                    
@@ -110,9 +108,7 @@
                     </div>                        
                     <div class="event-info">
                         <h5><a href="#">Principal's Message.</a></h5>
-                        <p>Praesent sagittis in enim vel cursus. Aenean velit ante, maximus ac placerat at, 
-                            volutpat et orci. Aliquam eu tellus orci.</p>	
-                        <p><br><a href="#">Read more...</a></p>
+                        <p>The Sunbeam Sr. Sec. School situated far from the hustle and bustle of city life, surrounded by the peaceful mountains terrain a really healthy and congenial atmosphere, plans to introduce a new concept and effective technique of education in English medium. <a href="<?php echo site_url('web/messages'); ?>">Read more...</a></p>
                     </div>
                     <div class="clearfix"></div>                    
                 </div>

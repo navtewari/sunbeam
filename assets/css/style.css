@@ -173,8 +173,11 @@ ul.callbacks_tabs.callbacks1_tabs {
 ,.event-info h5 a:hover,.camp-grid h4 a:hover{
     color: #181a1b;
 }
+ .event-info a{
+     color: #ffff00;
+    }
 .ftr-grid2 ul li a:hover, .ftr-grid3 ul li a:hover,a.more:hover,.blog-left p a:hover,.blog h3 a:hover{
-    color: #011f3e;
+    color: #1C90F4;
 }
 .blg-pic-info p,.news-grid p,.news-ltr p{
     color:#333;
@@ -276,7 +279,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .campus_head p{
     font-size:0.95em;
-    color:#777;
+    color:#000;
     line-height:1.7em;
 }
 .wel_grid{
@@ -292,7 +295,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .wel_grid  p {
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
 }
 .testimonal {
@@ -307,7 +310,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .testimnl-grid  a  p {
     font-size: 0.9em;
-    color: #777;
+    color: #000;
     line-height: 1.6em;
     display:inline-block;
 }
@@ -395,7 +398,8 @@ ul.callbacks_tabs.callbacks1_tabs {
 /*-- footer --*/
 .footer{
     padding:2em 0;
-    border-top:3px solid #011f3e;
+    background: #e3e3ff;
+    border-top:1px solid #011f3e;
 }
 .ftr-grid {
     padding:0 3em 0 0;
@@ -423,8 +427,9 @@ ul.callbacks_tabs.callbacks1_tabs {
 .ftr-grid2 ul li a,.ftr-grid3 ul li a{
     display:block;
     padding:5px 0;
-    color: #999;
+    color: #ff6600;
     font-size: 0.95em;
+    font-weight: 600;
 }
 .ftr-grid2 ul li a span,.ftr-grid3 ul li a span{
     width: 12px;
@@ -468,7 +473,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .about-head p{
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
 }
 .video-grid{
@@ -496,7 +501,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .video-info p {
     margin-bottom: 1.5em;
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
 }
 .our_work h3 {
@@ -516,7 +521,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .camp-grid p {
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
 }
 a.more{
@@ -608,18 +613,18 @@ a.list-group-item:hover {
 }
 .blog-info p{
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
     margin-top:5px;
 }
 p.snglp{
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
     margin:0;
 }
 .blog-left p a {
-    color: #777;
+    color: #000;
 }
 .recent-posts h4,.category h4,.coment-form h4,.response h4{
     margin: 0 0 18px 0;
@@ -1133,7 +1138,7 @@ ul.pager {
 .admin-text-right p {
     margin: 0px 0 18px 0;
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
 }
 .admin-text-right span {
@@ -1183,7 +1188,7 @@ ul.pager {
 }
 .response-text-right p {
     font-size: 0.9em;
-    color: #777;
+    color: #000;
     line-height: 1.7em;
 }
 .response-text-right ul{
@@ -1209,7 +1214,7 @@ ul.pager {
 .coment-form input[type="text"] {
     background: none;
     width: 100%;
-    color: #777;
+    color: #000;
     margin: 0 0px 23px 0;
     font-size: 0.9em;
     padding: 12px 10px;
@@ -1219,7 +1224,7 @@ ul.pager {
 .coment-form textarea {
     background: none;
     width: 100%;
-    color:#777;
+    color:#000;
     font-size: 0.9em;
     resize: none;
     height: 185px;
@@ -1357,7 +1362,7 @@ ul.pager {
 }
 .contact_left p{
     font-size: 0.95em;
-    color: #777;
+    color: #000;
     line-height: 1.8em;
     margin-bottom:1.2em;
 }
@@ -1379,12 +1384,12 @@ ul.pager {
 .company_ad p{
     font-size: 0.95em;
     line-height: 1.8em;
-    color: #777;
+    color: #000;
 }
 .days p {
     font-size: 0.95em;
     line-height: 1.8em;
-    color: #777;
+    color: #000;
 }
 .company_ad a{
     font-size: 0.9em;
@@ -1632,6 +1637,9 @@ ul.pager {
     .event-info {
         width: 85%;
         padding-top: 2px;
+    }
+    .event-info a{
+        color: #ffff00;
     }
     .event-grid:nth-child(2){
         margin:1.2em 0;
