@@ -13,6 +13,7 @@ class Web extends CI_Controller {
         $data['announce'] = $this->mm->get_most_recent_announcements();
         $data['bday'] = $this->mm->students_bday_this_week(7);
         $data['menu'] = 1;
+        $data['activities'] = $this->mm->get_activities();
         $this->load->view('templates/header');
         $this->load->view('index',$data);
         $this->load->view('templates/footer');
@@ -44,6 +45,18 @@ class Web extends CI_Controller {
         $this->load->view('templates/header');
         $this->load->view('gallery',$data);
         $this->load->view('templates/footer');
+    }
+
+    function activities(){
+        $data['menu'] = 1;
+        $data['activities'] = $this->mm->get_activities();
+        if(count($data['activities']) != 0){
+            $this->load->view('templates/header');
+            $this->load->view('activities',$data);
+            $this->load->view('templates/footer');
+        } else {
+            redirect('web');
+        }
     }
     function contact() {
         $data['menu'] = 6;

@@ -1,4 +1,3 @@
-
 <?php
 
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -88,6 +87,14 @@ class My_model extends CI_Model {
         return $query->result();
     }
 
+    function get_activities() {
+        $this->db->order_by('ID', 'desc');
+        $this->db->where('STATUS_', 1);
+        $query = $this->db->get('activities');
+
+        return $query->result();
+    }
+    
     function students_bday_this_week($diff_) {
         $datetime = new DateTime(date('Y/m/d'));
         $datetime->modify('+'.$diff_.' day');
@@ -99,7 +106,7 @@ class My_model extends CI_Model {
         $yr_ = $str_dt[0];
         $dateupto = $yr_.'/'.$mnth_.'/'.$dt_;
 
-        $this->db->select('MONTH(DOB) as mnth, DAY(DOB) as day');
+        $this->db->select('MONTH(DOB) as mnth, DAY(DOB) as day, NAME_, PHOTO_');
         $this->db->where('DATE_FORMAT(CONCAT('.date('Y').', "/",MONTH(DOB),"/",DAY(DOB)),"%Y/%m/%d") >=', date('Y/m/d'));
         $this->db->where('DATE_FORMAT(CONCAT('.date('Y').', "/",MONTH(DOB),"/",DAY(DOB)),"%Y/%m/%d") <=', $dateupto);
         $this->db->where('STATUS', 1);
@@ -108,6 +115,7 @@ class My_model extends CI_Model {
         
         return $query->result();
     }
+
 
     function _db_error() {
         //exception handling ------------------

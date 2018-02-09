@@ -67,12 +67,23 @@
                     <div class="col-md-3 wel_grid">
                         <img src="<?php echo base_url('assets/images/w3.jpg'); ?>" class="img-responsive" alt=""/>
                         <h5><a href="#">Student Activities</a></h5>
-                        <p>It is a great pleasure to share activities conducted by our Kid's. A cool Place for Kids!</p><p><br><a href="<?php echo site_url('web/'); ?>" class="know-more">Know more</a></p>
+                        <p>It is a great pleasure to share activities conducted by our Kid's. A cool Place for Kids!</p><p><br>
+                            <?php if(count($activities)!=0){?>
+                                <a href="<?php echo site_url('web/activities'); ?>" class="know-more">Know more</a></p>
+                            <?php } else { ?>
+                                <a href="#" class="know-more">Know more</a></p>
+                            <?php } ?>
                     </div>                        
                     <div class="col-md-3 wel_grid">
                         <img src="<?php echo base_url('assets/images/t3.jpg'); ?>" class="img-responsive" alt=""/>
                         <h5><a href="#">Happy Birthday</a></h5>
+                        <?php if(count($bday)!=0){?>
+                        <p>
+                            <?php $this->load->view('templates/bday'); ?>
+                        </p>
+                        <?php } else { ?>
                         <p align="center">Wishing you a Happy Birthday.</p> <p align="center">May GOD bless you all the days you live.</p>
+                        <?php } ?>
                     </div>
                     <div class="clearfix"></div>                       
                 </div>                    
