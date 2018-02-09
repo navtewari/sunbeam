@@ -14,7 +14,7 @@
         </script>
         <div class="event-pics">
             <?php for($loop=1;$loop<=11;$loop++){?>
-            <a href="<?php echo base_url('assets/images/'.$loop.'.jpg');?>" class="b-link-stripe b-animate-go  swipebox"  title="Image Title">
+            <a href="<?php echo base_url('assets/images/'.$loop.'.jpg');?>" class="b-link-stripe b-animate-go  swipebox"  title="THe Sunbeam Sr. Sec. School">
                 <img src="<?php echo base_url('assets/images/'.$loop.'.jpg');?>" alt="" class="img-responsive">
             </a>            
             <?php }?>
