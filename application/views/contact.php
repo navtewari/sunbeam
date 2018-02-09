@@ -13,20 +13,22 @@
         <div class="contact_top">			 		
             <div class="col-md-8 contact_left">
                 <h4>Quick Query</h4>                
-                <form>
+                <form action="<?PHP echo site_url('web/contactus'); ?>" method="post">
+                    <?php if ($this->session->flashdata('_msg_')) { ?>
+                        <div class="row">
+                            <div class="col-sm-12 border-bottom" style="text-align: center; padding: 5px; color: #ff0000; font-weight: bold; background: #ffff00; border-radius: 10px">
+                                <?php echo $this->session->flashdata('_msg_'); ?>
+                            </div>
+                            <div class="col-sm-12">
+                                &nbsp;
+                            </div>
+                        </div>
+                    <?php } ?>
                     <div class="form_details">
-                        <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                    this.value = 'Name';
-                                }">
-                        <input type="text" class="text" value="Email Address" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                    this.value = 'Email Address';
-                                }">
-                        <input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                    this.value = 'Subject';
-                                }">
-                        <textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {
-                                    this.value = 'Message';
-                                }">Message</textarea>
+                        <input type="text" class="text" name="txtname" required placeholder="Name">
+                        <input type="email" class="text" name="txtemail" required placeholder="Email">
+                        <input type="text" class="text" name="txtPhone" required placeholder="Phone Number">
+                        <textarea name="txtmessage" value="Message" required placeholder="Message"></textarea>
                         <div class="clearfix"> </div>
                         <div class="sub-button">
                             <input type="submit" value="Send message">
@@ -44,7 +46,7 @@
                         <p>Uttarakhand, India</p>
                         <p>&nbsp;</p>
                         <p><b>email :</b> <a href="#">thesunbeamschool2006@gmail.com<br>
-                            jcpant.20002002@gmail.com </a></p>
+                                jcpant.20002002@gmail.com </a></p>
                         <p><b>phone :</b> 9410112596, 9897910445</p>
                     </address>
                 </div>

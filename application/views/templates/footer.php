@@ -13,8 +13,8 @@
                         <ul>
                             <li><a href="<?php echo site_url('web');?>"><span></span>Home</a></li>
                             <li><a href="<?php echo site_url('web/about'); ?>"><span></span>About</a></li>
-                            <li><a href="#"><span></span>Admissions</a></li>
-                            <li><a href="#"><span></span>Features</a></li>	
+                            <li><a href="<?php echo site_url('web/admission'); ?>"><span></span>Admissions</a></li>
+                            <li><a href="<?php echo site_url('web/features'); ?>"><span></span>Features</a></li>	
                             <li><a href="<?php echo site_url('web/gallery'); ?>"><span></span>Gallery</a></li>
                             <li><a href="<?php echo site_url('web/contact'); ?>"><span></span>Contact</a></li>
                         </ul>

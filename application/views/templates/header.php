@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>School Sr Sec School Haldwani</title>
+        <title>The Sunbeam Sr Sec School Haldwani</title>
         <link href="<?php echo base_url('assets/css/bootstrap.css');?>" rel='stylesheet' type='text/css' />
         <script src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
         <script src="<?php echo base_url('assets/js/bootstrap.js');?>"></script>

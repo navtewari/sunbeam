@@ -1292,7 +1292,7 @@ ul.pager {
 .contact_left p span:hover{
     text-decoration:underline;
 }
-.form_details input[type="text"], .form_details textarea {
+.form_details input[type="text"], input[type="email"], .form_details textarea {
     padding: 11px;
     width: 51%;
     font-size: 1em;

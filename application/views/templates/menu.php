@@ -7,8 +7,8 @@
         <ul class="navig">
             <li class="<?php if ($menu == 1) { echo "active";}?>"><a href="<?php echo site_url('web');?>">Home</a></li>
             <li class="<?php if ($menu == 2) { echo "active";}?>"><a href="<?php echo site_url('web/about'); ?>">About</a></li>
-            <li class="<?php if ($menu == 3) { echo "active";}?>"><a href="#">Admissions</a></li>
-            <li class="<?php if ($menu == 4) { echo "active";}?>"><a href="#">Features</a></li>
+            <li class="<?php if ($menu == 3) { echo "active";}?>"><a href="<?php echo site_url('web/admission'); ?>">Admissions</a></li>
+            <li class="<?php if ($menu == 4) { echo "active";}?>"><a href="<?php echo site_url('web/features'); ?>">Features</a></li>
             <li class="<?php if ($menu == 5) { echo "active";}?>"><a href="<?php echo site_url('web/gallery'); ?>">Gallery</a></li>
             <li class="<?php if ($menu == 6) { echo "active";}?>"><a href="<?php echo site_url('web/contact'); ?>">Contact</a></li>
         </ul>
