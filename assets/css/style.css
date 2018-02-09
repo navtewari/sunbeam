@@ -1,3 +1,18 @@
+.know-more{
+    background: #ff6600;
+    padding: 7px;
+    border-radius: 5px;
+    color: #fff;
+        
+}
+
+.know-more:hover{
+    background: #cc3300;    
+    border-radius: 10px;    
+    font-weight: 500;
+    color:#fff;
+}
+
 h4, h5, h6,
 h1, h2, h3 {margin: 0;}
 ul, ol {margin: 0; padding:0;}
@@ -2262,11 +2277,6 @@ ul.pager {
     ul.navig {
         padding:0.6em 0;
     }
-<<<<<<< HEAD
-=======
-}
-
-
 #twf-container {
     display: block;
     width: 98%;
@@ -2336,6 +2346,7 @@ a:hover,a:focus{
     font-size: 22px;
     color: #5b5a5a;
 }
+
 @media only screen and (max-width: 600px){
     .tab2 .nav-tabs li{
         width: 100%;
@@ -2346,5 +2357,4 @@ a:hover,a:focus{
         top: 0;
         left: 5%;
     }
->>>>>>> origin/master
 }

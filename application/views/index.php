@@ -62,25 +62,17 @@
                     <div class="col-md-3 wel_grid">
                         <img src="<?php echo base_url('assets/images/w4.jpg'); ?>" class="img-responsive" alt=""/>
                         <h5><a href="#">Photo Gallery</a></h5>
-                        <p>Here you will find a large collection of some of our best photos to give you a peek at some of our amazing infrastructure, a sense of the activities within</p>
+                        <p>Here you will find a large collection of some of our best photos to give you a a feel of our School.</p><p><br><a href="<?php echo site_url('web/gallery'); ?>" class="know-more">Know more</a></p>
                     </div>
-                    <div class="col-md-6 wel_grid">
-                        <div class="tab2" role="tabpanel">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist" style="border-bottom: none;">
-                                <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Upcoming Events</a></li>                                
-                                <li role="presentation"><a href="#Section2" aria-controls="messages" role="tab" data-toggle="tab">Announcement</a></li>                        
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content tabs">
-                                <div role="tabpanel" class="tab-pane fade in active" id="Section1">
-                                    <?php $this->load->view('templates/tab/upcoming'); ?>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="Section2">
-                                    <?php $this->load->view('templates/tab/announcements'); ?>
-                                </div>                                                     
-                            </div>               
-                        </div>
+                    <div class="col-md-3 wel_grid">
+                        <img src="<?php echo base_url('assets/images/w3.jpg'); ?>" class="img-responsive" alt=""/>
+                        <h5><a href="#">Student Activities</a></h5>
+                        <p>It is a great pleasure to share activities conducted by our Kid's. A cool Place for Kids!</p><p><br><a href="<?php echo site_url('web/'); ?>" class="know-more">Know more</a></p>
+                    </div>                        
+                    <div class="col-md-3 wel_grid">
+                        <img src="<?php echo base_url('assets/images/t3.jpg'); ?>" class="img-responsive" alt=""/>
+                        <h5><a href="#">Happy Birthday</a></h5>
+                        <p align="center">Wishing you a Happy Birthday.</p> <p align="center">May GOD bless you all the days you live.</p>
                     </div>
                     <div class="clearfix"></div>                       
                 </div>                    

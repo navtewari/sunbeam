@@ -6,7 +6,7 @@
                         <h3>Our School</h3>
                         <p>The Sunbean Sr. Sec. School is envisioned as a leading school, professionally managed, in order to cater to the needs of the 21st century education system.</p>
                         <p>At our school, we promote a cumulative learning environment that helps in the development of the students’ cognitive skills along with their inter-personal skills as well as analytical skills.</p>
-                        <p><br><a href="<?php echo site_url('web/about'); ?>">Read more...</a></p>
+                        <p><br><a href="<?php echo site_url('web/about'); ?>" class="know-more">Read more</a></p>
                     </div>
                     <div class="col-md-3 ftr-grid2">
                         <h3>Pages</h3>
