@@ -116,6 +116,10 @@ class My_model extends CI_Model {
         return $query->result();
     }
 
+    function gallery() {
+        $query = $this->db->get('gallery');
+        return $query->result();
+    }
 
     function _db_error() {
         //exception handling ------------------

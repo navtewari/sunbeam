@@ -40,9 +40,10 @@ class Web extends CI_Controller {
         $this->load->view('templates/footer');
     }
     
-    function gallery() {
+    public function gallery() {
         $data['menu'] = 5;
-        $this->load->view('templates/header');
+        $data['gallery'] = $this->mm->gallery();        
+        $this->load->view('templates/header', $data);
         $this->load->view('gallery',$data);
         $this->load->view('templates/footer');
     }

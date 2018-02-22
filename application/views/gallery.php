@@ -1,4 +1,4 @@
-<div class="banner2">	  
+<div class="banner2">     
     <?php $this->load->view('templates/menu'); ?>
 </div>
 <!---->
@@ -12,13 +12,14 @@
                 $(".swipebox").swipebox();
             });
         </script>
-        <div class="event-pics">
-            <?php for($loop=1;$loop<=11;$loop++){?>
-            <a href="<?php echo base_url('assets/images/'.$loop.'.jpg');?>" class="b-link-stripe b-animate-go  swipebox"  title="THe Sunbeam Sr. Sec. School">
-                <img src="<?php echo base_url('assets/images/'.$loop.'.jpg');?>" alt="" class="img-responsive">
+            <?php foreach($gallery as $item){?>
+            <div class="event-pics">
+            <a href="<?php echo ADMIN___ . '/_assets_/gallery/'.$item->PHOTO_;?>" class="b-link-stripe b-animate-go  swipebox"  title="THe Sunbeam Sr. Sec. School" width="100%">
+                <img src="<?php echo ADMIN___ . '/_assets_/gallery/'.$item->PHOTO_;?>" alt="" class="img-responsive">
             </a>            
+            </div>
             <?php }?>
             <div class="clearfix"></div>
-        </div>
+        
     </div>
 </div>
