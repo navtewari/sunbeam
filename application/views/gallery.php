@@ -18,7 +18,7 @@
         </script>
         <div class="event-pics">
             <?php foreach ($gallery as $item) { ?> 
-            <a href="<?php echo ADMIN___ . '/_assets_/gallery/' . $item->PHOTO_; ?>" class="b-link-stripe b-animate-go  swipebox"  title="THe Jai Durge Educational Public School">
+            <a href="<?php echo ADMIN___ . '/_assets_/gallery/' . $item->PHOTO_; ?>" class="b-link-stripe b-animate-go  swipebox"  title="The Sunbeam School Pictures">
                 <img src="<?php echo ADMIN___ . '/_assets_/gallery/' . $item->PHOTO_; ?>" alt="" class="img-responsive">
             </a>            
             <?php }?>
