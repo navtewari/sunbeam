@@ -36,8 +36,14 @@
                 <div class="col-md-4 banner-grid">
 
                 </div>
-                <div class="col-md-4 banner-grid">
-                    <h3>News Feed</h3>
+                <div class="col-md-4 banner-grid">				
+                    <h3>News Feed					
+					<div style="float:right;">
+						<button class="btn btn-danger up"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+						<button class="btn btn-danger down"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
+						<button class="btn btn-success toggle"></button>
+					</div>
+					</h3>
                     <?php $this->load->view('templates/news'); ?>
                 </div>
                 <div class="clearfix"></div>
