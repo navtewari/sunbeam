@@ -12,7 +12,7 @@
             });
         });
     </script>  
-    <div class="banner">	  
+    <div class="banner">      
         <?php $this->load->view('templates/menu'); ?>
         <div class="slider">
             <div class="caption">
@@ -20,10 +20,10 @@
                     <div class="callbacks_container">
                         <ul class="rslides" id="slider">
                             <li><h3>Children must be taught how to think, not what to think.</h3></li>
-                            <li><h3>Educating the mind without educating the heart is no education at all.</h3></li>	
-                            <li><h3>Spoon feeding in the long run teaches us nothing but the shape of the spoon.</h3></li>	
+                            <li><h3>Educating the mind without educating the heart is no education at all.</h3></li>    
+                            <li><h3>Spoon feeding in the long run teaches us nothing but the shape of the spoon.</h3></li>  
                             <li><h3>The process of learning should be natural according to the age, ability and aptitude of the child.</h3></li>
-                        </ul>	
+                        </ul>   
                         <div class="clearfix"></div>
                     </div>
                 </div>
@@ -31,19 +31,19 @@
         </div>
         <div class="banner-grids">
             <div class="container">
-                <div class="col-md-4 banner-grid">				 
+                <div class="col-md-4 banner-grid">               
                 </div>
                 <div class="col-md-4 banner-grid">
 
                 </div>
-                <div class="col-md-4 banner-grid">				
-                    <h3>News Feed					
-					<div style="float:right;">
-						<button class="btn btn-danger up"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
-						<button class="btn btn-danger down"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
-						<button class="btn btn-success toggle"></button>
-					</div>
-					</h3>
+                <div class="col-md-4 banner-grid">              
+                    <h3>News Feed                   
+                    <div style="float:right;">
+                        <button class="btn btn-danger up"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                        <button class="btn btn-danger down"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
+                        <button class="btn btn-success toggle"></button>
+                    </div>
+                    </h3>
                     <?php $this->load->view('templates/news'); ?>
                 </div>
                 <div class="clearfix"></div>
@@ -56,7 +56,9 @@
             <div class="welcm_sec">
                 <div class="col-md-12 campus">
                     <div class="campus_head">
-                        <h3>Welcome</h3>
+                        <h3 style="float: left">Welcome</h3>
+                        <h6 style="float: right"><a href="<?php echo base_url('assets/dwnlds/book_list.pdf');?>" target="_blank">List of NCRT Books for Classes I-VIII (Session 2018-19)</a></h3>
+                        <div class="clearfix"></div>
                         <p>Our school is situated far from the hustle and bustle of city life, surrounded by the peaceful mountains
                             terrian a really healthy and congenial atmosphere, plans to introduce a new concept and effective technique of education in English medium.</p>
                     </div>
@@ -104,7 +106,7 @@
     <!---->
     <div class="news">
         <div class="container">               
-            <div class="event-grids">			
+            <div class="event-grids">
                 <div class="col-md-6 event-grid">  
                     <div class="date">
                         <img src="<?php echo base_url('assets/images/t1.jpg'); ?>" class="img-responsive" alt=""/>
@@ -113,7 +115,7 @@
                         <h5><a href="#">Manager's Message.</a></h5>
                         <p>Education is the most important part of a person's life. It not only modifies the animal instincts but also instils moral and ethical merits. It is the responsibility of the educational institutions to provide an atmosphere of freedom to each and every one irrespective of any discrimination. <a href="<?php echo site_url('web/messages'); ?>">Read more...</a></p>
                     </div>
-                    <div class="clearfix"></div>				 			 
+                    <div class="clearfix"></div>                             
                 </div>                    
                 <div class="col-md-6 event-grid">  
                     <div class="date">
@@ -125,7 +127,7 @@
                     </div>
                     <div class="clearfix"></div>                    
                 </div>
-                <div class="clearfix"></div>	
+                <div class="clearfix"></div>    
             </div>
         </div>
     </div>        
