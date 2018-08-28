@@ -36,8 +36,14 @@
                 <div class="col-md-4 banner-grid">
 
                 </div>
-                <div class="col-md-4 banner-grid">
-                    <h3>News Feed</h3>
+                <div class="col-md-4 banner-grid">				
+                    <h3>News Feed					
+					<div style="float:right;">
+						<button class="btn btn-danger up"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+						<button class="btn btn-danger down"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></button>
+						<button class="btn btn-success toggle"></button>
+					</div>
+					</h3>
                     <?php $this->load->view('templates/news'); ?>
                 </div>
                 <div class="clearfix"></div>
@@ -79,14 +85,14 @@
                             <?php } ?>
                     </div>                        
                     <div class="col-md-3 wel_grid">
-                        <img src="<?php echo base_url('assets/images/t3.jpg'); ?>" class="img-responsive" alt=""/>
-                        <h5><a href="#">Happy Birthday</a></h5>
-                        <?php if(count($bday)!=0){?>
-                        <p>
-                            <?php $this->load->view('templates/bday'); ?>
-                        </p>
+                        <?php if (count($bday) != 0) { ?>
+                            <p>
+                                <?php $this->load->view('templates/bday'); ?>
+                            </p>
                         <?php } else { ?>
-                        <p align="center">Wishing you a Happy Birthday.</p> <p align="center">May GOD bless you all the days you live.</p>
+                            <img src="<?php echo base_url('assets/images/t3.jpg'); ?>" class="img-responsive" alt="">
+                            <h5><a href="#">Happy Birthday</a></h5>
+                            <p align="center">No Birthday This Week.</p> 
                         <?php } ?>
                     </div>
                     <div class="clearfix"></div>                       
