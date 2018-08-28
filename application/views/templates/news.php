@@ -14,6 +14,6 @@
                     <br>
                 </div>
             </li>
-        <?php } ?>
+        <?php }?>
     </ul>               
 </div>
