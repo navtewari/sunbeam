@@ -60,12 +60,16 @@
                         <p>We continuously try to identify ways to improve student learning as measured on the high stakes standardized assessments mandated by the C.B.S.E .</p>
                     </div>                        
                     <div class="col-md-3 wel_grid">
-                        <img src="<?php echo base_url('assets/images/w4.jpg'); ?>" class="img-responsive" alt=""/>
+                        <a href="<?php echo site_url('web/gallery'); ?>" style="border: #ffffff solid 0px"><img src="<?php echo base_url('assets/images/w4.jpg'); ?>" class="img-responsive" alt=""/></a>
                         <h5><a href="#">Photo Gallery</a></h5>
                         <p>Here you will find a large collection of some of our best photos to give you a a feel of our School.</p><p><br><a href="<?php echo site_url('web/gallery'); ?>" class="know-more">Know more</a></p>
                     </div>
                     <div class="col-md-3 wel_grid">
-                        <img src="<?php echo base_url('assets/images/w3.jpg'); ?>" class="img-responsive" alt=""/>
+                        <?php if(count($activities)!=0){?>
+                            <a href="<?php echo site_url('web/activities'); ?>" style="border: #ffffff solid 0px"><img src="<?php echo base_url('assets/images/w3.jpg'); ?>" class="img-responsive" alt=""/></a></p>
+                        <?php } else { ?>
+                            <a href="#" class="know-more"><img src="<?php echo base_url('assets/images/w3.jpg'); ?>" class="img-responsive" alt=""/></a></p>
+                        <?php } ?>
                         <h5><a href="#">Student Activities</a></h5>
                         <p>It is a great pleasure to share activities conducted by our Kid's. A cool Place for Kids!</p><p><br>
                             <?php if(count($activities)!=0){?>
